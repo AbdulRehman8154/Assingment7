@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        // Write a js program to input week number and print week day.
+
+        function getWeekday(weekNumber) {
+  let days = ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"];
+  if (weekNumber >= 1 && weekNumber <= 7) {
+    console.log("Weekday for week number " + weekNumber + " is " + days[weekNumber - 1] + ".");
+  } else {
+    console.log("Invalid week number.");
+  }
+}
+
+// Example usage:
+getWeekday(2); // Output: Weekday for week number 2 is Monday.
+getWeekday(8); // Output: Invalid week number.
+
+    </script>
+</body>
+</html>

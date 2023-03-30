@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        // Write a js program to find all roots of a quadratic equation.
+
+        function findRoots(a, b, c) {
+  let discriminant = b * b - 4 * a * c;
+
+  if (discriminant > 0) {
+    let root1 = (-b + Math.sqrt(discriminant)) / (2 * a);
+    let root2 = (-b - Math.sqrt(discriminant)) / (2 * a);
+    console.log(`The roots of the quadratic equation are ${root1} and ${root2}`);
+  } else if (discriminant === 0) {
+    let root = -b / (2 * a);
+    console.log(`The root of the quadratic equation is ${root}`);
+  } else {
+    console.log("The quadratic equation has no real roots.");
+  }
+}
+
+// Example usage:
+findRoots(1, 5, 6); // Output: The roots of the quadratic equation are -2 and -3
+findRoots(1, -4, 4); // Output: The root of the quadratic equation is 2
+findRoots(1, 2, 3); // Output: The quadratic equation has no real roots.
+
+    </script>
+</body>
+</html>

@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        // Write a js program to check whether the 
+        // triangle is equilateral, isosceles or scalene triangle.
+
+        function checkTriangleType(side1, side2, side3) {
+  if (side1 === side2 && side2 === side3) {
+    console.log("The triangle is an equilateral triangle.");
+  } else if (side1 === side2 || side1 === side3 || side2 === side3) {
+    console.log("The triangle is an isosceles triangle.");
+  } else {
+    console.log("The triangle is a scalene triangle.");
+  }
+}
+
+// Example usage:
+checkTriangleType(3, 3, 3); // Output: The triangle is an equilateral triangle.
+checkTriangleType(3, 4, 4); // Output: The triangle is an isosceles triangle.
+checkTriangleType(3, 4, 5); // Output: The triangle is a scalene triangle.
+
+    </script>
+</body>
+</html>

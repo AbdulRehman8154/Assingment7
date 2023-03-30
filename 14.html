@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        // Write a js program to input angles of a triangle 
+        // and check whether triangle is valid or not.
+
+        function isTriangleValid(angle1, angle2, angle3) {
+  if (angle1 + angle2 + angle3 === 180 && angle1 > 0 && angle2 > 0 && angle3 > 0) {
+    console.log("The triangle is valid.");
+  } else {
+    console.log("The triangle is not valid.");
+  }
+}
+
+// Example usage:
+isTriangleValid(60, 60, 60); // Output: The triangle is valid.
+isTriangleValid(90, 45, 45); // Output: The triangle is valid.
+isTriangleValid(45, 45, -90); // Output: The triangle is not valid.
+
+    </script>
+</body>
+</html>

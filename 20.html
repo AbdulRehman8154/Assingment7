@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        
+// Write a js program to input basic salary of an employee and calculate its Gross salary according to following:
+// Basic Salary <= 10000 : HRA = 20%, DA = 80%
+// Basic Salary <= 20000 : HRA = 25%, DA = 90%
+// Basic Salary > 20000 : HRA = 30%, DA = 95%
+
+
+function calculateGrossSalary(basicSalary) {
+  let hra, da, grossSalary;
+
+  if (basicSalary <= 10000) {
+    hra = 0.2 * basicSalary;
+    da = 0.8 * basicSalary;
+  } else if (basicSalary <= 20000) {
+    hra = 0.25 * basicSalary;
+    da = 0.9 * basicSalary;
+  } else {
+    hra = 0.3 * basicSalary;
+    da = 0.95 * basicSalary;
+  }
+
+  grossSalary = basicSalary + hra + da;
+
+  console.log(`Basic Salary: ${basicSalary}`);
+  console.log(`HRA: ${hra}`);
+  console.log(`DA: ${da}`);
+  console.log(`Gross Salary: ${grossSalary}`);
+}
+
+// Example usage:
+calculateGrossSalary(8000); // Output: Basic Salary: 8000, HRA: 1600, DA: 6400, Gross Salary: 16000
+calculateGrossSalary(15000); // Output: Basic Salary: 15000, HRA: 3750, DA: 13500, Gross Salary: 32250
+calculateGrossSalary(25000); // Output: Basic Salary: 25000, HRA: 7500, DA: 23750, Gross Salary: 56250
+
+
+
+    </script>
+</body>
+</html>

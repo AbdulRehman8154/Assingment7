@@ -1,0 +1,67 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        // Write a js program to input month number and print number of days in that month.
+
+        function getMonthDays(monthNumber) {
+  let daysInMonth = 0;
+  switch (monthNumber) {
+    case 1:
+      daysInMonth = 31;
+      break;
+    case 2:
+      daysInMonth = 28;
+      break;
+    case 3:
+      daysInMonth = 31;
+      break;
+    case 4:
+      daysInMonth = 30;
+      break;
+    case 5:
+      daysInMonth = 31;
+      break;
+    case 6:
+      daysInMonth = 30;
+      break;
+    case 7:
+      daysInMonth = 31;
+      break;
+    case 8:
+      daysInMonth = 31;
+      break;
+    case 9:
+      daysInMonth = 30;
+      break;
+    case 10:
+      daysInMonth = 31;
+      break;
+    case 11:
+      daysInMonth = 30;
+      break;
+    case 12:
+      daysInMonth = 31;
+      break;
+    default:
+      console.log("Invalid month number.");
+      return;
+  }
+  console.log("Number of days in month " + monthNumber + " is " + daysInMonth + ".");
+}
+
+// Example usage:
+getMonthDays(2); // Output: Number of days in month 2 is 28.
+getMonthDays(4); // Output: Number of days in month 4 is 30.
+getMonthDays(13); // Output: Invalid month number.
+
+    </script>
+</body>
+</html>
